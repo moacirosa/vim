@@ -1,4 +1,3 @@
-# README #
 
 ## Sobre ##
 
@@ -7,22 +6,22 @@ Vim? Resolvi tentar...
 
 ## Pré-Requisitos
 
-Vim-nox
+* Vim-nox
 
 ## Plugins ##
 
-SnipMate
-CommandT
+* SnipMate
+* CommandT
 
 ## Colors ##
 
-Blackboard
-Vibrantink
+* Blackboard
+* Vibrantink
 
 ## Fonts ##
 
-Monaco (Ubuntu, Linux)
-[Instalar](https://wiki.ubuntu.com/Fonts "Instalando fontes no Ubuntu")
+Inclui a fonte Monaco (Ubuntu, Linux) muito utilizada em muitos tutoriais 
+dos tutoriais e editores como TextMate. [Instalar](https://wiki.ubuntu.com/Fonts "Instalando fontes no Ubuntu")
 
 ## Instalação ##
 
