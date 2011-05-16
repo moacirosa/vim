@@ -7,6 +7,7 @@ set ts=4
 set autoindent
 set nowrap
 set number
+set ignorecase
 
 
 "" Autocomplete
