@@ -25,5 +25,4 @@ dos tutoriais e editores como TextMate. [Instalar](https://wiki.ubuntu.com/Fonts
 
 ## Instalação ##
 
-(em breve... de verdade :p)
-
+(em breve... de verdade :p... Mas talvez demore mais que o esperado)
