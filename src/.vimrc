@@ -3,7 +3,7 @@
 syntax on
 color blackboard
 
-set ts=4
+set ts=2
 set autoindent
 set nowrap
 set number
