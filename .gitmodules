@@ -1,6 +1,3 @@
-[submodule "src/bundle/command-t"]
-	path = src/vim/bundle/command-t
-	url = git://git.wincent.com/command-t.git
 [submodule "src/bundle/delimitMate"]
 	path = src/vim/bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate.git
@@ -25,3 +22,6 @@
 [submodule "src/bundle/vim-markdown"]
 	path = src/vim/bundle/vim-markdown
 	url = git://github.com/hallison/vim-markdown.git
+[submodule "src/bundle/Command-T"]
+	path = src/bundle/Command-T
+	url = git://git.wincent.com/command-t.git

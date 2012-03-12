@@ -19,7 +19,7 @@ submodules:
 	git submodule update
 
 commandt:
-	cd src/bundle/Command-T/ruby/command-t/;\
+	cd src/vim/bundle/Command-T/ruby/command-t/;\
 		/usr/bin/ruby extconf.rb;\
 		make clean && make
 
