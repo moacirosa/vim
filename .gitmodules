@@ -22,9 +22,6 @@
 [submodule "src/bundle/vim-markdown"]
 	path = src/vim/bundle/vim-markdown
 	url = git://github.com/hallison/vim-markdown.git
-[submodule "src/bundle/Command-T"]
-	path = src/vim/bundle/Command-T
-	url = git://git.wincent.com/command-t.git
 [submodule "src/vim/bundle/Command-T"]
 	path = src/vim/bundle/Command-T
 	url = git://git.wincent.com/command-t.git
