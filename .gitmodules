@@ -25,3 +25,6 @@
 [submodule "src/vim/bundle/Command-T"]
 	path = src/vim/bundle/Command-T
 	url = git://git.wincent.com/command-t.git
+[submodule "src/vim/bundle/phpcs-pear-cakephp"]
+	path = src/vim/bundle/phpcs-pear-cakephp
+	url = git://github.com/moacirosa/phpcs-pear-cakephp.git

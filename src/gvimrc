@@ -48,7 +48,14 @@ au BufNewFile,BufRead *.less set filetype=less
 
 "" Code Standard
 
+let g:syntastic_check_on_open = 0
 let g:syntastic_phpcs_conf = "--standard=CakePHPPear"
+
+let g:syntastic_mode_map = { 'mode': 'passive',
+                               \ 'active_filetypes': [],
+                               \ 'passive_filetypes': ['php'] }
+
+nmap <silent> <F10> :SyntasticCheck<CR>
 
 if has("gui_running")
   " GUI is running or is about to start.
