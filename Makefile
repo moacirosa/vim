@@ -1,4 +1,6 @@
 # Installs extensions and compiles things that need compiling.
+# https://github.com/markstory/vim-files/blob/master/Makefile
+# http://ubuntuforums.org/showthread.php?t=275202
 #
 #
 help:
@@ -6,6 +8,11 @@ help:
 	@echo "update  - Download update for all plugins."
 
 install: symlink submodules commandt fonts
+
+symlink:
+	ln -sf ~+/src/vimrc ~/.vimrc
+	ln -sf ~+/src/gvimrc ~/.gvimrc
+	ln -sf ~+/src/vim ~/.vim
 
 submodules:
 	git submodule init
@@ -16,15 +23,10 @@ commandt:
 		/usr/bin/ruby extconf.rb;\
 		make clean && make
 
+fonts:
+	mkdir -p /usr/share/fonts/truetype/font-install
+	cp ~+/bin/Monaco.ttf /usr/share/fonts/truetype/font-install/Monaco.ttf
+	fc-cache -fv
+
 update:
 	git submodule foreach git pull origin master
-
-symlink:
-	ln -sf ~+/src/vimrc ~/.vimrc
-	ln -sf ~+/src/gvimrc ~/.gvimrc
-	ln -sf ~+/src/vim ~/.vim
-	
-fonts:
-    mkdir -p /usr/share/fonts/truetype/font-install
-    cp bin/Monaco.ttf /usr/share/fonts/truetype/font-install/Monaco.ttf
-    fc-cache -fv
