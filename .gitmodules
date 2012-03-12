@@ -1,27 +1,27 @@
 [submodule "src/bundle/command-t"]
-	path = src/bundle/command-t
+	path = src/vim/bundle/command-t
 	url = git://git.wincent.com/command-t.git
 [submodule "src/bundle/delimitMate"]
-	path = src/bundle/delimitMate
+	path = src/vim/bundle/delimitMate
 	url = git://github.com/Raimondi/delimitMate.git
 [submodule "src/bundle/git-vim"]
-	path = src/bundle/git-vim
+	path = src/vim/bundle/git-vim
 	url = git://github.com/motemen/git-vim.git
 [submodule "src/bundle/nerdtree"]
-	path = src/bundle/nerdtree
+	path = src/vim/bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
 [submodule "src/bundle/snipmate.vim"]
-	path = src/bundle/snipmate.vim
+	path = src/vim/bundle/snipmate.vim
 	url = git://github.com/msanders/snipmate.vim.git
 [submodule "src/bundle/syntastic"]
-	path = src/bundle/syntastic
+	path = src/vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
 [submodule "src/bundle/taglist"]
-	path = src/bundle/taglist
+	path = src/vim/bundle/taglist
 	url = git://github.com/vim-scripts/taglist.vim.git
 [submodule "src/bundle/vim-colors-solarized"]
-	path = src/bundle/vim-colors-solarized
+	path = src/vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "src/bundle/vim-markdown"]
-	path = src/bundle/vim-markdown
+	path = src/vim/bundle/vim-markdown
 	url = git://github.com/hallison/vim-markdown.git
