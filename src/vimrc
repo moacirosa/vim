@@ -1,0 +1,49 @@
+"" Pathogen
+
+call pathogen#infect()
+
+filetype plugin on
+au FileType c,vim,lisp filetype indent on
+
+
+"" General settings
+
+syntax enable
+
+set background=dark
+
+colorscheme solarized
+
+set tabstop=4
+set expandtab
+set shiftwidth=4
+set linespace=5
+set autoindent
+set smartindent
+set nowrap
+set number
+set ignorecase
+
+"" Some maps
+
+nmap <silent> <F7> :NERDTreeToggle<CR>
+nmap <silent> <F8> :Tlist<CR>
+
+let mapleader = ","
+
+"" Autocomplete
+
+autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+
+"" Syntax
+
+au BufNewFile,BufRead *.less set filetype=less
+
+"" Code Standard
+
+let g:syntastic_phpcs_conf = "--standard=CakePHPPear"
+
