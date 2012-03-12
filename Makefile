@@ -22,9 +22,9 @@ submodules:
 	git submodule update
 
 commandt:
-	cd src/vim/bundle/Command-T
-	ruby extconf.rb
-	make
+	cd src/vim/bundle/Command-T/ruby/command-t/;\
+		/usr/bin/ruby extconf.rb;\
+		make clean && make
 
 fonts:
 	current="$(shell pwd)"
