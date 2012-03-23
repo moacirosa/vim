@@ -55,7 +55,7 @@ let g:syntastic_mode_map = { 'mode': 'passive',
                                \ 'active_filetypes': [],
                                \ 'passive_filetypes': ['php'] }
 
-nmap <silent> <F10> :SyntasticCheck<CR>
+nmap <silent> <F10> :SyntasticCheck<CR>:Errors<CR>
 
 if has("gui_running")
   " GUI is running or is about to start.
