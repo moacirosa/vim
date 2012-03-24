@@ -1,6 +1,9 @@
 Requirements
 ------------
 
-* Vim-Nox
+This is an modification of the original file to run
+properly on a macintosh computer
+
 * Exuberant CTags
-* Ruby Dev library (sudo apt-get install ruby1.8-dev)
+* Ruby
+* Perl
