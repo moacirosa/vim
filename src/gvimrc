@@ -30,8 +30,8 @@ set guifont=Monaco
 
 "" Some maps
 
-nmap <silent> <F7> :NERDTreeToggle<CR>
-nmap <silent> <F8> :Tlist<CR>
+nmap <silent> <D-7> :NERDTreeToggle<CR>
+nmap <silent> <D-8> :Tlist<CR>
 
 let mapleader = ","
 
@@ -56,7 +56,7 @@ let g:syntastic_mode_map = { 'mode': 'passive',
                                \ 'active_filetypes': [],
                                \ 'passive_filetypes': ['php'] }
 
-nmap <silent> <F10> :SyntasticCheck<CR>:Errors<CR>
+nmap <silent> <D-3> :SyntasticCheck<CR>:Errors<CR>
 
 if has("gui_running")
   " GUI is running or is about to start.
