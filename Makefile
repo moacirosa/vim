@@ -10,12 +10,12 @@ help:
 	@echo "install - install + compile native things."
 	@echo "update  - Download update for all plugins."
 
-install: symlink submodules fonts bye
+install: symlink submodules commandt bye
 
 symlink:
-	ln -sf "$(shell readlink -f "src/vimrc")" ~/.vimrc
-	ln -sf "$(shell readlink -f "src/gvimrc")" ~/.gvimrc
-	ln -sf "$(shell readlink -f "src/vim")" ~/.vim
+	ln -sf "$(shell bin/pathget "src/vimrc")" ~/.vimrc
+	ln -sf "$(shell bin/pathget "src/gvimrc")" ~/.gvimrc
+	ln -sf "$(shell bin/pathget "src/vim")" ~/.vim
 
 submodules:
 	git submodule init
@@ -25,13 +25,6 @@ commandt:
 	cd src/vim/bundle/Command-T/ruby/command-t/;\
 		/usr/bin/ruby extconf.rb;\
 		make clean && make
-
-fonts:
-	current="$(shell pwd)"
-	mkdir -p /usr/share/fonts/truetype/font-install
-	cp bin/Monaco.ttf /usr/share/fonts/truetype/font-install/Monaco.ttf
-	fc-cache -fv
-	cd "$(START)"
 
 update:
 	git submodule foreach git pull origin master
