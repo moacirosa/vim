@@ -7,6 +7,7 @@ au FileType c,vim,lisp filetype indent on
 
 
 "" General settings
+set colorcolumn=80
 
 syntax enable
 
