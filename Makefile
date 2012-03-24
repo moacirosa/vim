@@ -10,7 +10,7 @@ help:
 	@echo "install - install + compile native things."
 	@echo "update  - Download update for all plugins."
 
-install: symlink submodules fonts bye
+install: symlink submodules commandt fonts bye
 
 symlink:
 	ln -sf "$(shell readlink -f "src/vimrc")" ~/.vimrc
