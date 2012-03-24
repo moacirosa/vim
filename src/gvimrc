@@ -7,6 +7,7 @@ au FileType c,vim,lisp filetype indent on
 
 
 "" General settings
+set colorcolumn=80
 
 syntax enable
 
@@ -25,8 +26,7 @@ set number
 set ignorecase
 
 set guioptions-=T  "remove toolbar
-set guifont=Monaco
-
+set gfn=Monaco\ 10.7
 "" Some maps
 
 nmap <silent> <F7> :NERDTreeToggle<CR>
