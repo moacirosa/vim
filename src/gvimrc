@@ -37,6 +37,7 @@ set guifont=Monaco
 
 nmap <silent> <F7> :NERDTreeToggle<CR>
 nmap <silent> <F8> :Tlist<CR>
+nmap <silent> <F3> :SyntasticCheck<CR>:Errors<CR>
 
 let mapleader = ","
 
@@ -60,8 +61,6 @@ let g:syntastic_phpcs_conf = "--standard=CakePHPPear"
 let g:syntastic_mode_map = { 'mode': 'passive',
                                \ 'active_filetypes': [],
                                \ 'passive_filetypes': ['php'] }
-
-nmap <silent> <F10> :SyntasticCheck<CR>:Errors<CR>
 
 if has("gui_running")
   " GUI is running or is about to start.
