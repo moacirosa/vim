@@ -28,3 +28,6 @@
 [submodule "src/vim/bundle/phpcs-pear-cakephp"]
 	path = src/vim/bundle/phpcs-pear-cakephp
 	url = git://github.com/moacirosa/phpcs-pear-cakephp.git
+[submodule "src/vim/bundle/cakephp"]
+	path = src/vim/bundle/cakephp
+	url = git://github.com/ndreynolds/vim-cakephp.git
