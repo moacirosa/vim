@@ -5,6 +5,9 @@ call pathogen#infect()
 filetype plugin on
 au FileType c,vim,lisp filetype indent on
 
+"" Import php-doc
+
+source ~/.vim/bundle/php-doc/php-doc.vim
 
 "" General settings
 
@@ -26,8 +29,12 @@ set ignorecase
 
 "" Some maps
 
-nmap <silent> <F7> :NERDTreeToggle<CR>
-nmap <silent> <F8> :Tlist<CR>
+nmap <silent> <D-6> :NERDTreeFind<CR>
+nmap <silent> <D-7> :NERDTreeToggle<CR>
+nmap <silent> <D-8> :Tlist<CR>
+inoremap <D-4> <ESC>:call PhpDocSingle()<CR>i 
+nnoremap <D-4> :call PhpDocSingle()<CR> 
+vnoremap <D-4> :call PhpDocRange()<CR>
 
 let mapleader = ","
 
